@@ -1,0 +1,73 @@
+1.- Autentificacion a google
+
+GET https://accounts.google.com/o/oauth2/v2/auth?client_id=733653994612-li9ljees2lkppr3jdusm1sh3skhbkssc.apps.googleusercontent.com&response_type=code&scope=https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/tasks.readonly&redirect_uri=http://localhost/api/redirect.html
+
+code = 4/AAAoQ0xMC4G7r5KUgrNdJ2IeQRm1WuspFP4NYVOhaKT6hzr5nhFeloDpSgTVJKOAsPRUWfCUkIV6Hlh7Og4yTp0
+	   4/AADYhS-qSi7Qx9ZKLwbehn2N1bMkpxevWkxKGM8y9Io0JToDFv7Sxo3RMIDFsg1Sau6lNftjcYMe4VeqCK7o7hg
+	   4/AAACKA4wXLDXUwgQQcVIsLj9U3A1EDL-oCx2SRUDgY-Dh6DiWW6zQd3Lv-xXZjVzZCKaUiOLXOeooGB-EKoDjcs
+
+https://www.googleapis.com/oauth2/v4/token?code=4/AAAoQ0xMC4G7r5KUgrNdJ2IeQRm1WuspFP4NYVOhaKT6hzr5nhFeloDpSgTVJKOAsPRUWfCUkIV6Hlh7Og4yTp0&client_id=733653994612-li9ljees2lkppr3jdusm1sh3skhbkssc.apps.googleusercontent.com&client_secret=XjGOe2tZjNc_lFhRXmXSG8q7&redirect_uri=http://localhost/api/redirect.html&grant_type=authorization_code
+
+https://www.googleapis.com/oauth2/v4/token?code=4/AAACKA4wXLDXUwgQQcVIsLj9U3A1EDL-oCx2SRUDgY-Dh6DiWW6zQd3Lv-xXZjVzZCKaUiOLXOeooGB-EKoDjcs&client_id=733653994612-li9ljees2lkppr3jdusm1sh3skhbkssc.apps.googleusercontent.com&client_secret=XjGOe2tZjNc_lFhRXmXSG8q7&redirect_uri=http://localhost/api/redirect.html&grant_type=authorization_code
+
+2.- cambiamos codigo por tokens
+
+{
+ "access_token": "ya29.GluDBQ0zomvdE1L5Y3_r9oJnZkuFHBSRi0Aw5w4ckbu7umFLueob4zBIargk7h_j_t-vf_lqbHLR8UoSEKH_RLyoJIA4twg-Ns96jSvOd9esd7oNnOht-tYJAhTQ",
+ "token_type": "Bearer",
+ "expires_in": 3600
+}
+
+scopes
+https://www.googleapis.com/auth/youtube.force-ssl
+https://www.googleapis.com/auth/youtube
+https://www.googleapis.com/auth/youtube.readonly
+https://www.googleapis.com/auth/youtube.upload
+https://www.googleapis.com/auth/youtubepartner-channel-audit
+
+
+
+https://accounts.google.com/o/oauth2/auth?client_id=733653994612-li9ljees2lkppr3jdusm1sh3skhbkssc.apps.googleusercontent.com&redirect_uri=http://localhost/api/redirect.html&response_type=code&scope=https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtubepartner-channel-audit
+
+code  = 4/AACMtiasRY0UK917sJcXNb7-4qZuFJwfJMbrc0DnbiYhO4_QWYj9ZekbBTyy4NDZKmxLwsYe3r3W_Jy5gCo9hSI
+
+4/AACOtq10SFUkWcrexio1G4NfovEp_BKBKRsO6kkuQELnFFt8QPuT3_IMNs8Bv5gZzJE5mBfPkbesuM0T30f9tgg
+
+https://www.googleapis.com/oauth2/v4/token?code=4/AACMtiasRY0UK917sJcXNb7-4qZuFJwfJMbrc0DnbiYhO4_QWYj9ZekbBTyy4NDZKmxLwsYe3r3W_Jy5gCo9hSI&client_id=733653994612-li9ljees2lkppr3jdusm1sh3skhbkssc.apps.googleusercontent.com&client_secret=XjGOe2tZjNc_lFhRXmXSG8q7&redirect_uri=http://localhost/api/redirect.html&grant_type=authorization_code
+
+https://www.googleapis.com/oauth2/v4/token
+
+
+
+Implementacion en el proyecto
+
+- despues de hacer la busqueda, mostrar, solo en el mapa aparecera los que tengan coordenadas..
+
+- paginacion para busquedas mayores a 10
+- los resultados se tienen que ver del mismo tamaño adecuandolos a la pantalla,
+- el mapa en el lado derecho
+- direccion postal del video, o el lugar
+- para el viernes antes de las 11
+- bitbucket
+
+
+
+
+
+desarrolladores de fb y solicitar un apikey
+ - escribir una carta a fb para explicar para que lo quiere
+ 	- motivo academico
+
+
+
+Examen de la tercera unidad, este proyecto
+fecha de entrega 9 de abril - individual
+Hacer un memorama con las fotos de perfil de mis contactos (foto de perfin y una tarjera con los datos)
+
+construir una aplicacion con el api de fb o un sitio web donde se pueda logear..
+no necesariamente que conecte con el mashup
+- contruya una apicacion sobre fb
+	
+
+(prisma de conversacion)
+last.fm
